@@ -14,25 +14,44 @@
         display: inline;
         padding-right: 1rem;
       }
+      .dl-accomodation {
+        max-width: 30%;
+        min-width: 300px;
+      }
+      body {
+        margin: 0;
+		padding: 0;
+        background-color: #d6fdd6;
+      }
+      header {
+		display:flex;
+		align-items: center;
+        height: 150px;
+        background-image: url(images/banner1.jpg);
+        background-size: cover;
+        background-position: 50%;
+      }
     </style>
   </head>
-  <body bgcolor="#d6fdd6">
+  <body>
     <header>
-      <table border="0">
-        <tr>
-          <td width="105">
-            <img
-              id="img-logo"
-              src="./images/green-leaf.svg"
-              alt="Hotel Logo"
-              width="100"
-            />
-          </td>
-          <td>
-            <h2>Hotel Green Stay</h2>
-          </td>
-        </tr>
-      </table>
+      <div id="div-wrapper">
+        <table border="0">
+          <tr>
+            <td>
+              <img
+                id="img-logo"
+                src="./images/green-leaf.svg"
+                alt="Hotel Logo"
+                width="80"
+              />
+            </td>
+            <td>
+              <h2>Hotel Green Stay</h2>
+            </td>
+          </tr>
+        </table>
+      </div>
     </header>
 
     <div>
@@ -52,8 +71,8 @@
 
     <div>
       <h3>Accomodation</h3>
-      <dl>
-        <div>
+      <dl id="dl-accomodation">
+        <div class="dl-accomodation">
           <dt><b>Family Deluxe</b></dt>
           <dd>
             Features two double beds, a seperate seeting area and a spacious
@@ -63,7 +82,7 @@
             charge!
           </dd>
         </div>
-        <div>
+        <div class="dl-accomodation">
           <dt><b>Business Deluxe</b></dt>
           <dd>
             Designed for business-persons who value their time and comfort.
@@ -74,7 +93,7 @@
             the hotel's office lounge.
           </dd>
         </div>
-        <div>
+        <div class="dl-accomodation">
           <dt><b>Premier Suite</b></dt>
           <dd>
             Brings the best of both worlds together - feel the comfort of your
