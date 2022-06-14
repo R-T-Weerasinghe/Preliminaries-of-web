@@ -4,16 +4,42 @@
     <meta charset="utf-8" />
     <title>Hotel Green Stay</title>
     <style>
+      body {
+        padding: 10px;
+      }
       #img-logo {
         float: left;
       }
       #list-footer {
         list-style: none;
-
       }
       #list-footer li {
         display: inline;
         padding-right: 1rem;
+      }
+      .centered-tbl {
+        margin: 0 auto; /* to center the table */
+      }
+      #table-facilities-and-offers tr td {
+        width: 30rem;
+        vertical-align: top;
+        padding-left: 4%;
+        padding-right: 4%;
+      }
+      #dl-accomodation {
+        padding: 10px;
+      }
+      #dl-accomodation dt {
+        font-weight: bold;
+      }
+      #dl-accomodation dd {
+        padding-bottom: 15px;
+      }
+      .border-image {
+        border: 10px solid #a4f542;
+      }
+      figcaption {
+        text-align: center;
       }
     </style>
   </head>
@@ -35,33 +61,55 @@
         </tr>
       </table>
     </header>
-
-    <div>
-      <h3>Hotel Facilities</h3>
-      <ul type="disc">
-        <li>Parking</li>
-        <li>Free Wifi</li>
-        <li>Room Service</li>
-        <li>24-Hour Guest Receptionist</li>
-        <li>Pool</li>
-        <li>Mini Fridge</li>
-        <li>Laundry Services</li>
-        <li>Exercise Facilities and Accessories</li>
-        <li>Spa & Wellness Amenities</li>
-      </ul>
+    <div id="wrapper-facilities-and-offers">
+      <table border="0" id="table-facilities-and-offers" class="centered-tbl">
+        <tr>
+          <td>
+            <h3>Hotel Facilities</h3>
+            <ul type="disc">
+              <li>Parking</li>
+              <li>Free Wifi</li>
+              <li>Room Service</li>
+              <li>24-Hour Guest Receptionist</li>
+              <li>Pool</li>
+              <li>Mini Fridge</li>
+              <li>Laundry Services</li>
+              <li>Exercise Facilities and Accessories</li>
+              <li>Spa & Wellness Amenities</li>
+            </ul>
+          </td>
+          <td>
+            <h3>Upcoming Offers</h3>
+            <ul type="square">
+              <li>
+                10% off for all AMEX card holders on 15<sup>th</sup> &amp; 16
+                <sup>th</sup> June 2022
+              </li>
+              <li>
+                Stay two nights and get a 50% off for the 3<sup>rd</sup> night -
+                valid from 20<sup>th</sup> to 30<sup>th</sup> of June 2022
+              </li>
+              <li>
+                Chef's special buffet will be available for any guest without
+                any additional charges - 1<sup>st</sup> August 2022
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <div>
       <h3>Accomodation</h3>
-      <dl>
-        <dt><b>Family Deluxe Room</b></dt>
+      <dl id="dl-accomodation">
+        <dt>Family Deluxe Room</dt>
         <dd>
           Features two double beds, a seperate seeting area and a spacious
           balcony with a nice view. The room is equipped with a 42" flat screen
           cable TV, mini fridge, telephone facilities and a dedicated wifi
           connection for the room. All offered without any additional charge!
         </dd>
-        <dt><b>Business Deluxe</b></dt>
+        <dt>Business Deluxe</dt>
         <dd>
           Designed for business-persons who value their time and comfort. Comes
           with the cozy King sized bed, balcony with a panaromic view and
@@ -70,7 +118,7 @@
           seperate working area, elctronic safe and complimentary access to the
           hotel's office lounge.
         </dd>
-        <dt><b>Premier Suite</b></dt>
+        <dt>Premier Suite</dt>
         <dd>
           Brings the best of both worlds together - feel the comfort of your own
           home in an emmersive hotel experience. Featuring the Premier Suite -
@@ -85,22 +133,45 @@
     </div>
 
     <div>
-      <h3>Upcoming Offers</h3>
-      <ul type="square">
-        <li>
-          10% off for all AMEX card holders on 15<sup>th</sup> &amp; 16
-          <sup>th</sup> June 2022
-        </li>
-        <li>
-          Stay two nights and get a 50% off for the 3<sup>rd</sup> night - valid
-          from 20<sup>th</sup> to 30<sup>th</sup> of June 2022
-        </li>
-        <li>
-          Chef's special buffet will be available for any guest without any
-          additional charges - 1<sup>st</sup> August 2022
-        </li>
-      </ul>
+      <table class="centered-tbl">
+        <tr>
+          <td>
+            <figure>
+              <img
+                src="./images/Family_Deluxe.jpg"
+                alt="Picture of Family Deluxe room"
+                height="200px"
+                class="border-image"
+              />
+              <figcaption>Family Deluxe Room</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img
+                src="./images/Business_Delux.jpg"
+                alt="Picture of Business Deluxe Room"
+                height="200px"
+                class="border-image"
+              />
+              <figcaption>Business Deluxe Room</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <img
+                src="./images/Premier_Suite.jpg"
+                alt="Picture of Premier Suite"
+                height="200px"
+                class="border-image"
+              />
+              <figcaption>Premier Suite</figcaption>
+            </figure>
+          </td>
+        </tr>
+      </table>
     </div>
+
     <footer>
       <h4>Contact us on:</h4>
       <small>
